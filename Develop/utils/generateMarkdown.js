@@ -8,21 +8,29 @@ function renderLicenseBadgeAndLink(license) {
       licenseName = "This project is licensed under the "+license;
       
       switch(license){
-        case "MIT License" : 
-        licenseBadge = "https://img.shields.io/badge/license-MIT-green";
+        case "The MIT License" : 
+        licenseBadge = "https://img.shields.io/badge/License-MIT-yellow.svg";
           break;
 
-        case "Apache License 2.0" : 
-        licenseBadge = "https://img.shields.io/badge/license-Apache--2.0-blue";
+        case "SIL Open Font License 1.1" : 
+        licenseBadge = "https://img.shields.io/badge/License-OFL_1.1-lightgreen.svg";
           break;
 
         case "GNU General Public License 3.0" : 
-        licenseBadge = "https://img.shields.io/badge/license-GPL%203.0-blue";
+        licenseBadge = "https://img.shields.io/badge/license-GPL%203.0-blue.svg";
           break;
 
-        case "BSD 3 License" : 
-        licenseBadge = "https://img.shields.io/badge/license-BSD%203-green";
+        case "The Artistic License 2.0" : 
+        licenseBadge = "https://img.shields.io/badge/License-Artistic_2.0-0298c3.svg";
           break;
+
+        case "Apache 2.0 License" : 
+        licenseBadge = "https://img.shields.io/badge/License-Apache_2.0-blue.svg";
+          break;
+
+        case "Eclipse Public License" : 
+        licenseBadge = "https://img.shields.io/badge/License-EPL_1.0-red.svg";
+          break;          
 
         default :
         licenseBadge = "";

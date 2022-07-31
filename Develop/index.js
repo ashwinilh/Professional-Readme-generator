@@ -8,80 +8,84 @@ const questions = [
     {
         type: "input",
         name: "title",
-        message: "What is your project's name?",
-      },
-      {
+        message: "What is the name of your project :",
+    },
+    {
         type: "input",
         name: "description",
         message: "Please write a short description of your project : ",
-      },
-      {
+    },
+    {
         type: "input",
         name: "github",
-        message: "What is your github username?",
-      },
-      {
+        message: "Enter your github username :",
+    },
+    {
         type: "input",
         name: "email",
-        message: "What is your email address?",
-      },
-      {
+        message: "Enter your email address :",
+    },
+    {
         type: "list",
-        message: "What kind of license should your project have?",
+        message: "Select the license for your project :",
         name: "license",
         choices: [
-          "MIT License",
-          "Apache License 2.0",
-          "GNU General Public License 3.0",
-          "BSD 3 License",
-          "None",
+            "The MIT License",
+            "SIL Open Font License 1.1",
+            "GNU General Public License 3.0",
+            "The Artistic License 2.0",
+            "Apache 2.0 License",
+            "Eclipse Public License",
+            "None",
         ],
-      },
-      {
+    },
+    {
         type: "input",
         name: "installation",
-        message: "What command should be run to install dependencies?",
-      },
-      {
+        message: "Enter the command for installing yor project :",
+    },
+    {
         type: "input",
         name: "test",
-        message: "What command should be run to run tests?",
-      },
-      {
+        message: "Enter command to run tests on your project :",
+    },
+    {
         type: "input",
         name: "usage",
-        message: "What is the usage information?",
-      },
-      {
+        message: "Enter any usage information for the project :",
+    },
+    {
         type: "input",
         name: "contributing",
         message:
-          "What are the contribution guidelines?",
-      }
-    ];
+            "Enter the contribution guidelines for the project :",
+    }
+];
 
 // A function to write README file
 function writeToFile(fileName, data) {
     fs.writeFile(fileName, generateMarkdown(data), error => {
-    
+
         console.log("Generating README...");
-    
+
         if (error) throw error;
-    
+
         console.log("README file Generated!");
-      });
+    });
 }
 
 // A function to initialize app
 function init() {
+    console.log("Answer the promts to genetare README file for your proejct");
+    console.log("-----------------------------------------------------------");
     inquirer
-    .prompt(questions)
-    .then(function (answers) {
-      writeToFile("README.md", answers);
-    })
-    .catch(function (err) {
-      console.log(err);
-    });
+        .prompt(questions)
+        .then(function (answers) {
+            writeToFile("README.md", answers);
+        })
+        .catch(function (err) {
+            console.log(err);
+        });
 }
 
 // Function call to initialize app
