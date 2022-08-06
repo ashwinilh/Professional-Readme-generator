@@ -1,8 +1,8 @@
-# sdflkj
-  ![Github License](https://img.shields.io/badge/License-OFL_1.1-lightgreen.svg)
+# DEMONSTARTION
+  ![Github License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
   # Description
-  jsadkfjlsda
+  THIS AIS NA DEMO
 
   # Table of Contents
   * [Installation](#installation)
@@ -14,23 +14,23 @@
   
   # Installation
   To install necessary dependencies, run the following command : 
-  <pre><code>lskdfjlksa</code></pre>
+  <pre><code>npm i</code></pre>
 
   # Usage
-  askdjflk
+  THis is just deomo.
 
   # License
-  This project is licensed under the SIL Open Font License 1.1.
+  This project is licensed under the The MIT License.
 
   # Contributing
-  skldfjlksd
+  There is no contribution
 
   # Tests
   To run tests, run the following command :
-  <pre><code>lkjldksaf</code></pre>
+  <pre><code>npm run test</code></pre>
 
   # Questions
   * If you have any questions about the repo, 
-  [open an issue](https://github.com/sakdfjlksdjf/sdflkj/issues/new) 
-  or contact me directly at sdafjsldkjfs. 
-  * You can find more of my work at [sakdfjlksdjf](https://github.com/sakdfjlksdjf).
+  [open an issue](https://github.com/ASHwinilh/DEMONSTARTION/issues/new) 
+  or contact me directly at ashwini.lh12@gnail.com. 
+  * You can find more of my work at [ASHwinilh](https://github.com/ASHwinilh).
